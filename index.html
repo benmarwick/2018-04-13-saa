@@ -1,24 +1,23 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: "NMNH - SIL Training Room - CE107" # brief name of host site without address (e.g., "Euphoric State University")
+address: "10th Street and Constitution Avenue, NW Washington, DC" # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "us" # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en" # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "38.8912662,-77.0266126"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "13 April 2018"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:30 am - 1:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: "2018-04-13"      # use YYYY-MM-DD format like 2015-01-01
+enddate: "2018-04-13"          # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Ben Marwick"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: [""]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "bmarwick@uw.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
-day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to R"
-day2_am: "Data analysis and visualization in R"
-day2_pm: "SQL for data management"
+day1_am: "Introduction to R"
+day1_pm: "Data analysis and visualization in R"
+
 ---
 <!--
   HEADER
@@ -61,7 +60,7 @@ This hands-on workshop teaches basic concepts, skills and tools for working more
 effectively with data. 
 </p>
 <p>
-We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
+We will cover {{page.day1_am}}, and {{page.day1_pm}}.
 
 Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
@@ -74,7 +73,7 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at archaeologists who are students and early career researchers.
 </p>
 
 <!--
@@ -139,6 +138,11 @@ Participants should bring their laptops and plan to participate actively. By the
 -->
 <h2>Preliminary Schedule</h2>
 
+Click on the links to browse the full lesson content for self-guided learning:
+
+Morning:    <a href="http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-r.html">Introduction to R</a>
+Afternoon:  <a href="http://www.datacarpentry.org/R-ecology-lesson/03-dplyr.html">Analysing</a> and <a href="http://www.datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html">visualising</a> data.
+  
 <!-- DO NOT EDIT SURVEY LINKS -->
 <p><em>Surveys</em></p>
 <p>Please be sure to complete these surveys before and after the workshop.</p>
@@ -146,24 +150,6 @@ Participants should bring their laptops and plan to participate actively. By the
 <p><a href='{{ site.dc_post_assessment }}'>Post-workshop Survey</a></p>
 
 
-
-<div class="row">
-  <div class="col-md-6">
-
-    <h3>Day 1</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
-       <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
-    </table>
- 
- 
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
-      <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
-    </table>
- </div>
-</div>
 
 <!--
   ETHERPAD
@@ -204,84 +190,35 @@ Participants should bring their laptops and plan to participate actively. By the
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<!--
+
 <h2>Syllabus</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>Analysing data</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+      <li>Import common data files into R</li>
+      <li>Use conditions to select columns and rows</li>
+      <li>Use the split-apply-combine concept for data analysis</li>
+      <li>Export data from R into common file formats</li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Programming in Python</h3>
+    <h3>Visualising data</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+      <li>Produce scatter plots, boxplots, and time series plots using ggplot</li>
+      <li>Apply themes to plots to change their appearance</li>
+      <li>Generate small multiples of plots with faceting/li>
+      <li>Create interactive plots</li>
     </ul>
   </div>
 
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/06-R.html">Reference...</a></li>
-    </ul>
-  </div>
 
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3>Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
-    </ul>
-  </div>
 </div>
 
 
 <hr/>
--->
+
 
 <!--
   SETUP
