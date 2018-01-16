@@ -158,11 +158,82 @@ Participants should bring their laptops and plan to participate actively.
 -->
 <h2>Preliminary Schedule</h2>
 
-We will do an <a href="http://www.datacarpentry.org/R-ecology-lesson/01-intro-to-r.html">introduction to R</a>, 
-then move on to <a href="http://www.datacarpentry.org/R-ecology-lesson/03-dplyr.html">analysing</a> 
-and <a href="http://www.datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html">visualising</a> 
-archaeological data. We will be using the <a href="https://www.tidyverse.org/">tidyverse</a>, a modern, 
-unified collection of R packages designed for data science. For a more in-depth coverage of topics of the
+<table class="tg">
+  <tr>
+    <th class="tg-yw4l">9:30</th>
+    <th class="tg-yw4l">9:45</th>
+    <th class="tg-yw4l">Introduction to R and RStudio</th>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">9:45</td>
+    <td class="tg-yw4l">10:00</td>
+    <td class="tg-yw4l">Importing data from spreadsheets</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">10:00</td>
+    <td class="tg-yw4l">10:15</td>
+    <td class="tg-yw4l">Inspecting and cleaning data</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">10:15</td>
+    <td class="tg-yw4l">10:30</td>
+    <td class="tg-yw4l">Exploratory Data Analysis with dplyr &amp; tidyr</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">10:30</td>
+    <td class="tg-yw4l">10:45</td>
+    <td class="tg-yw4l">Exploratory Data Analysis with dplyr &amp; tidyr</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">10:45</td>
+    <td class="tg-yw4l">11:00</td>
+    <td class="tg-yw4l">Visualising data with ggplot &amp; plotly</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">11:00</td>
+    <td class="tg-yw4l">11:15</td>
+    <td class="tg-yw4l">Visualising data with ggplot &amp; plotly</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">11:15</td>
+    <td class="tg-yw4l">11:30</td>
+    <td class="tg-yw4l">Hypothesis testing: two samples</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">11:30</td>
+    <td class="tg-yw4l">11:45</td>
+    <td class="tg-yw4l">Hypothesis testing: more than two samples</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">11:45</td>
+    <td class="tg-yw4l">12:00</td>
+    <td class="tg-yw4l">Hypothesis testing: count data</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">12:00</td>
+    <td class="tg-yw4l">12:15</td>
+    <td class="tg-yw4l">Importing and visualising GIS data with sf</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">12:15</td>
+    <td class="tg-yw4l">12:30</td>
+    <td class="tg-yw4l">Making maps using R &amp; google maps</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">12:30</td>
+    <td class="tg-yw4l">12:45</td>
+    <td class="tg-yw4l">Spatial data analysis: spatial joins</td>
+  </tr>
+  <tr>
+    <td class="tg-yw4l">12:45</td>
+    <td class="tg-yw4l">1:00</td>
+    <td class="tg-yw4l">Spatial data analysis: point pattern analysis</td>
+  </tr>
+</table>
+
+
+We will be using the <a href="https://www.tidyverse.org/">tidyverse</a>, a modern, 
+unified collection of R packages designed for data science. For a more in-depth coverage of many of the topics of the
 workshop, you may want to read <a href="http://r4ds.had.co.nz/"><em>R for Data Science</em></a> by Hadley Wickham and Garrett Grolemund.
 </p>
   
@@ -196,51 +267,7 @@ workshop, you may want to read <a href="http://r4ds.had.co.nz/"><em>R for Data S
 
 <hr/>
 
-<!--
-  SYLLABUS
 
-  Show what topics will be covered.
-
-  1. If your workshop is R rather than Python, remove the comment
-     around that section and put a comment around the Python section.
-  2. Some workshops will delete SQL.
-  3. Please make sure the list of topics is synchronized with what you
-     intend to teach.
-  4. You may need to move the div's with class="col-md-6" around inside
-     the div's with class="row" to balance the multi-column layout.
-
-  This is one of the places where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
-
-<h2>Syllabus</h2>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3><a href="http://www.datacarpentry.org/R-ecology-lesson/03-dplyr.html">Analysing data</a></h3>
-    <ul>
-      <li>Import common data files into R</li>
-      <li>Use conditions to select columns and rows</li>
-      <li>Use the split-apply-combine concept for data analysis</li>
-      <li>Export data from R into common file formats</li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3><a href="http://www.datacarpentry.org/R-ecology-lesson/04-visualization-ggplot2.html">Visualising data</a></h3>
-    <ul>
-      <li>Produce scatter plots, boxplots, and time series plots using ggplot</li>
-      <li>Apply themes to plots to change their appearance</li>
-      <li>Generate small multiples of plots with faceting</li>
-      <li>Create interactive plots</li>
-    </ul>
-  </div>
-
-
-</div>
-
-
-<hr/>
 
 
 <!--
